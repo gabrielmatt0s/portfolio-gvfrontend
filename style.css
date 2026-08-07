@@ -96,6 +96,14 @@
   .pin-progress{position:absolute;bottom:26px;left:5vw;right:5vw;height:1px;background:var(--line);z-index:5;}
   .pin-progress i{position:absolute;top:-1.5px;left:0;height:4px;width:22%;background:var(--gold);}
 
+  .projects-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  @media(max-width:860px){.projects-grid{grid-template-columns:1fr;}}
+  .project-card{background:var(--bg);padding:44px 5vw;border-top:2px solid transparent;transition:border-color .3s;}
+  .project-card:hover{border-top-color:var(--gold);}
+  .project-card .project-name{font-size:clamp(1.3rem,2.2vw,1.7rem);margin-top:10px;}
+  .project-card .project-desc{max-width:none;margin-top:14px;}
+  .project-card .project-link{margin-top:18px;}
+
   .skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);margin-bottom:140px;border-top:1px solid var(--line);}
   @media(max-width:860px){.skills-grid{grid-template-columns:1fr;}}
   .skill-card{background:var(--bg);padding:38px 32px;transform-style:preserve-3d;will-change:transform;border-top:2px solid transparent;transition:border-color .3s;} .skill-card:hover{border-top-color:var(--gold);}
